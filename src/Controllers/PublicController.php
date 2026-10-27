@@ -34,4 +34,12 @@ class PublicController
         dump($_GET);
         dump($_POST);
     }
+
+    public function tech()
+    {
+        $title = 'Technology';
+        $articles = Article::all();
+
+        view('tech', compact('title', 'articles'));
+    }
 }

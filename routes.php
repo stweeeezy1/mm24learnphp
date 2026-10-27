@@ -27,3 +27,5 @@ Router::post('/register', [AuthController::class, 'register']);
 Router::get('/login', [AuthController::class, 'loginForm']);
 Router::post('/login', [AuthController::class, 'login']);
 Router::get('/logout', [AuthController::class, 'logout']);
+
+Router::get('/tech', [PublicController::class, 'tech']);
